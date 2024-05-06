@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mvvm_playground/const/theme.dart';
+import 'package:mvvm_playground/features/cubit/home_cubit.dart';
 import 'package:mvvm_playground/features/pages/home_page.dart';
 
 void main() {
@@ -14,7 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: theme,
-      home: MyHomePage(title: 'Flutter Demo Page'),
+      home: MultiBlocProvider(providers: [
+        BlocProvider(
+          create: (_) => HomeCubit(),
+        )
+      ], child: MyHomePage(title: 'Messages')),
     );
   }
 }
