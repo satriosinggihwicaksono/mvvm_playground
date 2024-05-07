@@ -16,7 +16,28 @@ var theme = ThemeData(
         onSecondary: Colors.black,
         error: dangerColor,
         onError: Colors.white,
-        background: backgroundColor,
+        background: Colors.black,
         onBackground: Colors.white,
         surface: primaryColor,
         onSurface: Colors.white));
+
+const textHeadingAlt =
+    TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.w800);
+
+const textHeading = TextStyle(
+  color: Colors.white,
+  fontSize: 22,
+);
+const textHeading2Alt =
+    TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w600);
+
+const textHeading2 = TextStyle(
+  color: Colors.white,
+  fontSize: 16,
+);
+const textBody = TextStyle(
+  color: Colors.white,
+  fontSize: 14,
+);
+const subtitle = TextStyle(color: borderColor, fontSize: 14);
+const subtitle2 = TextStyle(color: borderColor, fontSize: 12);

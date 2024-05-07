@@ -1,10 +1,12 @@
-class HomeModel {
-  HomeModel({
+import 'package:intl/intl.dart';
+
+class HomeData {
+  HomeData({
     required this.data,
   });
   late final List<Data> data;
 
-  HomeModel.fromJson(Map<String, dynamic> json) {
+  HomeData.fromJson(Map<String, dynamic> json) {
     data = List.from(json['data']).map((e) => Data.fromJson(e)).toList();
   }
 }
@@ -28,6 +30,6 @@ class Data {
     displayName = json['display_name'];
     imageUrl = json['image_url'];
     lastMessage = json['last_message'];
-    lastSent = json['last_sent'];
+    lastSent = DateFormat('hh:mm').format(DateTime.parse(json['last_sent']));
   }
 }
