@@ -11,6 +11,7 @@ Widget textField({String? placeholder}) {
       },
       decoration: InputDecoration(
         hintText: placeholder,
+        hintStyle: inputPlaceholder,
         contentPadding: const EdgeInsets.symmetric(vertical: 4, horizontal: 12),
         prefixIcon: const Icon(
           Icons.search,
@@ -22,6 +23,7 @@ Widget textField({String? placeholder}) {
         filled: true,
         fillColor: barBackgroundColor,
       ),
+      style: textBody,
     ),
   );
 }

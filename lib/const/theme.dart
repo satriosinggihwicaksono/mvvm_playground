@@ -41,3 +41,4 @@ const textBody = TextStyle(
 );
 const subtitle = TextStyle(color: borderColor, fontSize: 14);
 const subtitle2 = TextStyle(color: borderColor, fontSize: 12);
+const inputPlaceholder = TextStyle(color: borderColor, fontSize: 14);
