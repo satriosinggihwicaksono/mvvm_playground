@@ -11,6 +11,7 @@ import 'package:mvvm_playground/functions/geolocation.dart';
 import 'package:provider/provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
+// add-- permisions
 class FlutterMapPage extends StatefulWidget {
   const FlutterMapPage({super.key});
 
